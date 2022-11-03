@@ -1,7 +1,16 @@
 /* ============================== Phase 1 ============================== */
 /* -------------------------- exploring async -------------------------- */
+function f1() {
+    return "I came first!";
+}
 
-// Your code here
+async function f2() {
+    return "I came second";
+}
+
+console.log('first function: ', f1());
+console.log('second function: ', f2());
+f2().then(result => console.log(result));
 
 
 
